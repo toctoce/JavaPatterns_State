@@ -9,27 +9,23 @@ public class PausedState extends MusicPlayerState {
 
     @Override
     public void play() {
-        // Play
         player.startPlayback();
         player.changeState(new PlayingState(player));
     }
 
     @Override
     public void stop() {
-        // stop
         player.stopPlayback();
         player.changeState(new StoppedState(player));
     }
 
     @Override
     public void next() {
-        // skip 10s
         player.skip10seconds();
     }
 
     @Override
     public void prev() {
-        // rewind 10s
         player.rewind10seconds();
     }
 
