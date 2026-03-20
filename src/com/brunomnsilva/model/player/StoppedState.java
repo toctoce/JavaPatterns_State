@@ -31,6 +31,15 @@ public class StoppedState extends MusicPlayerState {
     }
 
     @Override
+    public void turnOn() {
+    }
+
+    @Override
+    public void turnOff() {
+        player.changeState(new OffState(player));
+    }
+
+    @Override
     public String status() {
         return "Stopped. Deck contains " + player.getCurrentLoadedSong();
     }

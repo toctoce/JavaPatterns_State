@@ -30,6 +30,15 @@ public class PlayingState extends MusicPlayerState {
     }
 
     @Override
+    public void turnOn() {
+    }
+
+    @Override
+    public void turnOff() {
+        player.changeState(new OffState(player));
+    }
+
+    @Override
     public String status() {
         Time current = player.getMediaTime();
         Time total = player.getDuration();
