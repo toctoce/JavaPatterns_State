@@ -17,7 +17,7 @@ public class MusicPlayer {
         playlist = new Playlist();
         try {
             playlist.readFromFolder(folderPath);
-            state = new StoppedState(this);
+            state = new OffState(this);
         } catch (IOException e) {
             e.printStackTrace();
         }
