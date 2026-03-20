@@ -23,6 +23,7 @@ public class OffState extends MusicPlayerState{
 
     @Override
     public void turnOn() {
+        player.loadCurrentSong();
         player.changeState(new StoppedState(player));
     }
 
