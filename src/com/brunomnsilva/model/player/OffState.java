@@ -32,6 +32,6 @@ public class OffState extends MusicPlayerState{
 
     @Override
     public String status() {
-        return "";
+        return "Off.";
     }
 }
