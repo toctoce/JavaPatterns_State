@@ -12,6 +12,8 @@ public abstract class MusicPlayerState {
     public abstract void stop();
     public abstract void next();
     public abstract void prev();
+    public abstract void turnOn();
+    public abstract void turnOff();
     public abstract String status();
 
 }

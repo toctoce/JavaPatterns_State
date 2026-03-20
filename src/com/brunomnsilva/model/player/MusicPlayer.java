@@ -51,6 +51,14 @@ public class MusicPlayer {
         state.prev();
     }
 
+    public void turnOn() {
+        state.turnOn();
+    }
+
+    public void turnOff() {
+        state.turnOff();
+    }
+
     /**
      * Returns a string with the player status.
      * @return the player status
