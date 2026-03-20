@@ -35,6 +35,7 @@ public class PlayingState extends MusicPlayerState {
 
     @Override
     public void turnOff() {
+        player.stopPlayback();
         player.changeState(new OffState(player));
     }
 
