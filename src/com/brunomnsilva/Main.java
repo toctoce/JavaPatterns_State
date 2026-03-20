@@ -34,7 +34,7 @@ public class Main {
                 System.out.println("------- CURRENT STATUS -------");
                 System.out.println(player.status());
                 System.out.println("------------------------------");
-                System.out.println("Available commands: PLAY, STOP, NEXT, PREV, STATUS, QUIT");
+                System.out.println("Available commands: ON, OFF, PLAY, STOP, NEXT, PREV, STATUS, QUIT");
                 System.out.print("Prompt> ");
                 command = keyboard.nextLine().toLowerCase();
 
@@ -50,6 +50,12 @@ public class Main {
                         break;
                     case "prev":
                         player.prev();
+                        break;
+                    case "on":
+                        player.turnOn();
+                        break;
+                    case "off":
+                        player.turnOff();
                         break;
                     case "status":
                         System.out.println(player.status());
